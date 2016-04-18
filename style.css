@@ -1,0 +1,171 @@
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {
+    padding: 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #E6E1DF;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 20px
+}
+
+p,
+h1 {
+    color: white;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    text-decoration: underline;
+    color: red;
+}
+
+ol {
+    padding: 1rem 0;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #096ab1
+}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.masthead {
+    padding: 6em 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 20px #E6E1DF;
+    border-bottom: solid 20px #E6E1DF;
+    width: 70%;
+    background-image: url(https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&fit=crop&fm=jpg&h=900&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1300);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.masthead-heading,
+.masthead-intro {
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1rem;
+}
+
+.masthead-heading {
+    margin-top: -0.2rem;
+}
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+.container {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%
+}
+
+.container-heading {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.container-introduction,
+.container-from,
+.container-more {
+    padding: 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align: left;
+    font-family: Comic Sans MS;
+    color: black;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+.footer {
+    padding: 1rem 0;
+    background-color: #6fc6f7;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.social > li {
+    display: inline-block;
+    width: 32%;
+}
+
+
+/* -------------------------------------
+    place all the desktop styles above this line
+    Responsive styles
+    (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+    place all the mobile tables styles bellow this line
+    */
